@@ -88,7 +88,7 @@ export default function App() {
       <section className="relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden px-6">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1504450758481-7338eba7524a?auto=format&fit=crop&q=80&w=1920" 
+            src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&q=80&w=1920" 
             className="w-full h-full object-cover opacity-40 grayscale-[0.5] group-hover:grayscale-0 transition-all duration-1000" 
             alt="Stadium Action"
           />
@@ -268,7 +268,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
             { 
-              img: "https://images.unsplash.com/photo-1574629810360-7efbbe195018", 
+              img: "https://images.unsplash.com/photo-1522778119026-d647f0596c20", 
               label: t.showcase.sports, 
               icon: Trophy, 
               color: "bg-blue-600",
