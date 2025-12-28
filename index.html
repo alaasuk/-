@@ -66,6 +66,16 @@
             -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
         }
         [dir="rtl"] { font-family: 'Cairo', sans-serif; }
+        
+        @keyframes infinite-scroll {
+          from { transform: translateX(0); }
+          to { transform: translateX(-50%); }
+        }
+        .animate-infinite-scroll {
+          display: flex;
+          width: max-content;
+          animation: infinite-scroll 40s linear infinite;
+        }
     </style>
     <script type="importmap">
     {
@@ -81,5 +91,7 @@
 </head>
 <body>
     <div id="root"></div>
+    <!-- السطر التالي ضروري جداً لعمل الموقع عند الرفع -->
+    <script type="module" src="index.tsx"></script>
 </body>
 </html>
