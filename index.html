@@ -20,6 +20,7 @@
             color: #fff;
             font-family: 'Plus Jakarta Sans', 'Cairo', sans-serif;
             overflow-x: hidden;
+            margin: 0;
         }
         .font-bebas { font-family: 'Bebas Neue', sans-serif; }
         .hero-title {
@@ -27,10 +28,6 @@
             font-weight: 900;
             line-height: 0.9;
             text-transform: uppercase;
-        }
-        .neon-border {
-            border: 1px solid rgba(0, 210, 255, 0.3);
-            box-shadow: 0 0 20px rgba(0, 210, 255, 0.1);
         }
         .neon-text-blue {
             text-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
@@ -51,20 +48,6 @@
             position: relative;
             overflow: hidden;
         }
-        .pricing-card::before {
-            content: "";
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,204,0,0.05) 0%, transparent 70%);
-            z-index: 0;
-        }
-        .player-mask {
-            mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
-            -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
-        }
         [dir="rtl"] { font-family: 'Cairo', sans-serif; }
         
         @keyframes infinite-scroll {
@@ -77,21 +60,22 @@
           animation: infinite-scroll 40s linear infinite;
         }
     </style>
-    <script type="importmap">
-    {
-      "imports": {
-        "react": "https://esm.sh/react@^19.2.3",
-        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-        "react/": "https://esm.sh/react@^19.2.3/",
-        "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
-        "framer-motion": "https://esm.sh/framer-motion@^11.11.11"
-      }
-    }
-    </script>
+<script type="importmap">
+{
+  "imports": {
+    "vite": "https://esm.sh/vite@^7.3.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
 </head>
 <body>
     <div id="root"></div>
-    <!-- السطر التالي ضروري جداً لعمل الموقع عند الرفع -->
-    <script type="module" src="index.tsx"></script>
+    <script type="module" src="/index.tsx"></script>
 </body>
 </html>
